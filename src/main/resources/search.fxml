@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="searchPane" prefHeight="500.0" prefWidth="771.0" style="-fx-background-color: #ecf0f1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ibouce.dms.Search">
+   <children>
+      <Label fx:id="lblInfo" layoutX="100.0" layoutY="135.0" prefHeight="15.0" prefWidth="423.0" text="Log Information " textFill="#2c3e50" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="248.0">
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="529.0" layoutY="147.0" prefHeight="3.0" prefWidth="142.0" stylesheets="@css/progressbar.css" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="155.0" />
+      <AnchorPane layoutX="14.0" layoutY="157.0" prefHeight="303.0" prefWidth="571.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="157.0">
+         <children>
+            <TableView fx:id="tableDoc" layoutX="10.0" layoutY="-30.0" onMouseClicked="#tableDocOnMouseClicked" prefHeight="362.0" prefWidth="731.0" stylesheets="@css/tableview.css" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="colID" maxWidth="75.0" prefWidth="75.0" resizable="false" text="Identifier" />
+                  <TableColumn fx:id="colType" maxWidth="100.0" prefWidth="100.0" resizable="false" style="-fx-background-color: #bdc3c7; -fx-base: #bdc3c7;" text="Folder" />
+                  <TableColumn fx:id="ColName" maxWidth="500.0" prefWidth="200.0" text="Name" />
+                <TableColumn fx:id="colOCR" maxWidth="250.0" prefWidth="200.0" text="OCR" />
+                  <TableColumn fx:id="colExtension" maxWidth="75.0" prefWidth="75.0" resizable="false" text="Extension" />
+                  <TableColumn fx:id="colSize" maxWidth="75.0" prefWidth="75.0" resizable="false" text="Size" />
+                  <TableColumn fx:id="colDate" maxWidth="100.0" prefWidth="100.0" resizable="false" text="Date" />
+                  <TableColumn fx:id="colUser" maxWidth="200.0" prefWidth="100.0" resizable="false" text="User" />
+                  <TableColumn fx:id="colData" maxWidth="100.0" prefWidth="100.0" resizable="false" text="Data" visible="false" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="53.0" layoutY="-41.0" prefHeight="107.0" prefWidth="571.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <TextField fx:id="txtSearch" layoutX="14.0" layoutY="46.0" onKeyReleased="#txtSearchOnKeyReleased" prefHeight="45.0" prefWidth="542.0" promptText="Search..." style="-fx-focus-color: #ecf0f1;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font name="Roboto Bold" size="16.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="IP Address - Local Host or LAN " />
+               </tooltip>
+            </TextField>
+            <HBox alignment="CENTER" layoutX="210.0" layoutY="-5.0" prefHeight="8.0" prefWidth="541.0" spacing="10.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" selected="true" stylesheets="@css/checkbox.css" text="All Database" textFill="#2c3e50">
+                     <font>
+                        <Font name="Roboto" size="12.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" stylesheets="@css/checkbox.css" text="Public" textFill="#2c3e50">
+                     <font>
+                        <Font name="Roboto" size="12.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" stylesheets="@css/checkbox.css" text="Private" textFill="#2c3e50">
+                     <font>
+                        <Font name="Roboto" size="12.0" />
+                     </font>
+                  </CheckBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ComboBox prefHeight="22.0" prefWidth="87.0" promptText="User" stylesheets="@css/combobox.css" />
+                  <ComboBox prefHeight="22.0" prefWidth="87.0" promptText="Folder" stylesheets="@css/combobox.css" />
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+                  <ComboBox prefHeight="22.0" prefWidth="87.0" promptText="Start Date" stylesheets="@css/combobox.css" />
+                  <ComboBox prefHeight="22.0" prefWidth="87.0" promptText="End Date" stylesheets="@css/combobox.css" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

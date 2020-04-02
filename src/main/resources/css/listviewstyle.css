@@ -1,0 +1,26 @@
+.jfx-list-cell:selected{
+    -fx-background-color: #7f8c8d;
+}
+.jfx-list-cell{
+    -fx-background-insets: 0.0;
+}
+.jfx-list-cell .jfx-rippler{
+    -fx-rippler-fill : #2c3e50;
+}
+.jfx-list-cell:hover{
+    -fx-background-color: #bdc3c7;
+}
+.jfx-list-view{
+    -fx-background-insets: 0;
+    -fx-cell-vertical-margin: 10.0;
+    -fx-vertical-gap: 10;
+    -fx-pref-with: 150;
+
+}
+
+.jfx-list-view{
+    -jfx-background-insets: 0;
+    -jfx-cell-vertical-margin: 10.0;
+    -jfx-vertical-gap: 10;
+    -jfx-pref-width:150;
+}

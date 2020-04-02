@@ -1,0 +1,32 @@
+.button {
+    -fx-background-color: #ecf0f1;
+}
+.button:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+/*.addBobOk{
+        -fx-background-color:#90EE90;
+        -fx-background-radius: 5,5,4;
+        -fx-background-insets: 0 0 -1 0,0,1;
+        -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+        -fx-text-alignment: center;
+}
+.addBobOk:hover{
+        -fx-background-color:#64EE64;
+        -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+        -fx-text-alignment: center;
+}
+.busy{
+        -fx-background-color:#B3B3B3;
+        -fx-text-alignment: center;
+}
+.busy:hover{
+        -fx-background-color:cdcbcb;
+        -fx-text-alignment: center;
+}*/

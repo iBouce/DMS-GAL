@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="inscriptionEmailPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ibouce.dms.InscriptionName">
+   <children>
+      <VBox alignment="CENTER" layoutX="460.0" layoutY="241.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: linear-gradient(to top, #2980b9, #2b6594, #274c71, #1f344f, #141e30);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="700.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@media/new_moon_127px.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Separator prefWidth="200.0" />
+                        <ImageView fitHeight="50.0" fitWidth="100.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@media/new_moon_127px.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Separator prefWidth="200.0" />
+                        <ImageView fitHeight="50.0" fitWidth="100.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@media/new_moon_127px.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/secured_letter_128px.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Text fill="#ecf0f1" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRATION">
+                     <font>
+                        <Font name="Roboto Bold" size="64.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="45.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="txtNameTyped" alignment="CENTER" onKeyReleased="#txtNameReleased" prefHeight="45.0" prefWidth="500.0" promptText="Full Name" style="-fx-background-radius: 10; -fx-focus-color: #ecf0f1;">
+                     <font>
+                        <Font name="Roboto Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Enter your full name" />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" />
+               </VBox.margin>
+            </VBox>
+            <Label fx:id="lblSubscribeInfo" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="643.0" text="Please enter a valid e-mail address to get our latest updates !" textFill="#ecf0f1">
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="484.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnSubBack" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnSubBack" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 100;" text="Back">
+                     <font>
+                        <Font name="Roboto Bold" size="16.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+                  <Button fx:id="btnSubGo" mnemonicParsing="false" onAction="#btnSubGo" prefHeight="45.0" prefWidth="140.0" style="-fx-background-color: #27ae60; -fx-background-radius: 100;" text="Next">
+                     <font>
+                        <Font name="Roboto Bold" size="16.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

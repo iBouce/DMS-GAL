@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="licencePane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ibouce.dms.Licence">
+   <children>
+      <VBox alignment="CENTER" layoutX="450.0" layoutY="231.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: linear-gradient(to bottom, #051937, #1b2757, #3b3477, #623e94, #8e44ad);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/licence_128px.png" />
+               </image>
+            </ImageView>
+            <Text fill="#ecf0f1" strokeType="OUTSIDE" strokeWidth="0.0" text="Licence Key Product">
+               <font>
+                  <Font name="Roboto Bold" size="64.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUUID" alignment="CENTER" cacheShape="false" editable="false" focusTraversable="false" prefHeight="45.0" prefWidth="736.0" promptText="Universal Unique Identifier" style="-fx-background-color: transparent; -fx-text-inner-color: #ecf0f1; -fx-highlight-fill: #95a5a6;">
+               <font>
+                  <Font name="Roboto Bold" size="24.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Send this unique code to -iboucenda@gmail.com- to get licence key" />
+               </tooltip>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="484.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="txtKeyTyped" alignment="CENTER" onKeyReleased="#txtReleased" prefHeight="45.0" prefWidth="664.0" promptText="Licence Key" style="-fx-background-radius: 10; -fx-focus-color: #ecf0f1; -fx-highlight-fill: #95a5a6;">
+                     <font>
+                        <Font name="Roboto Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Enter a valid licence key" />
+                     </tooltip>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="lblLicenceInfo" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="653.0" text="For More Information Contact : iboucenda@gmail.com" textAlignment="CENTER" textFill="#ecf0f1">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="484.0" spacing="20.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane fx:id="aboutPane" prefHeight="420.0" prefWidth="342.0" style="-fx-background-color: #34495e;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ibouce.dms.About">
+   <children>
+      <ImageView fitHeight="217.0" fitWidth="261.0" layoutX="91.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="30.0">
+         <image>
+            <Image url="@media/logo512x512.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="293.0" layoutY="474.0" text="Version 1.0.0" textFill="#95a5a6" AnchorPane.bottomAnchor="71.0">
+         <font>
+            <Font name="Roboto Bold" size="12.0" />
+         </font>
+      </Label>
+      <Text fill="#ecf0f1" layoutX="33.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Document Managment System" AnchorPane.bottomAnchor="109.140625">
+         <font>
+            <Font name="Roboto Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="206.0" layoutY="450.0" text="Enterprise Edition" textFill="#95a5a6" AnchorPane.bottomAnchor="86.0">
+         <font>
+            <Font name="Roboto Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#95a5a6" layoutX="17.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Copyright Reseved © iBouce-Apps Development" textAlignment="CENTER" wrappingWidth="366.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="17.0">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </Text>
+      <Hyperlink alignment="CENTER" layoutX="64.0" layoutY="390.0" prefHeight="23.0" prefWidth="277.0" text="https://iboucemedimed.blogspot.com/" textAlignment="CENTER" AnchorPane.bottomAnchor="145.0" />
+   </children>
+</AnchorPane>

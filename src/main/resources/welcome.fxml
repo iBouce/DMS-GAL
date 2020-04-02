@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ibouce.dms.Welcome">
+   <children>
+      <AnchorPane fx:id="rootPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox alignment="CENTER" layoutX="75.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" style="-fx-background-color: linear-gradient(to top, #2980b9, #2b6594, #274c71, #1f344f, #141e30);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@media/enter_127px.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="648.0" text="Document Management System" textFill="#ecf0f1">
+                     <font>
+                        <Font name="Roboto Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblInformation" alignment="CENTER" prefHeight="11.0" prefWidth="648.0" text="Upload..." textFill="#ecf0f1">
+                     <font>
+                        <Font name="Roboto Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ProgressBar fx:id="progressBar" prefHeight="11.0" prefWidth="1000.0" stylesheets="@css/progressbar.css" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

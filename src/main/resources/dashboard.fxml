@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboardPane" prefHeight="600.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ibouce.dms.Dashboard">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ecf0f1;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="54.0" layoutY="49.0" prefHeight="128.0" prefWidth="564.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="150.0" layoutY="31.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fx:id="companyImage" fitHeight="100.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@media/icons8-company-100.png" />
+                                 </image>
+                              </ImageView>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox alignment="CENTER" prefHeight="127.0" prefWidth="151.0">
+                                 <children>
+                                    <Label prefHeight="15.0" prefWidth="239.0" text="Total Users" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="Roboto" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@media/icons8-user-group-100.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="lblCountUsers" text="0" textFill="#2c3e50">
+                                             <font>
+                                                <Font name="Roboto Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="57.0" prefWidth="76.0" spacing="5.0">
+                                       <children>
+                                          <Button fx:id="btnManageUsers" mnemonicParsing="false" onAction="#btnManageUsers" prefHeight="25.0" prefWidth="60.0" stylesheets="@css/button.css" text="Users" textFill="#2c3e50" />
+                                          <Button mnemonicParsing="false" onAction="#btnContactUsers" prefHeight="25.0" prefWidth="60.0" stylesheets="@css/button.css" text="Contact" textFill="#2c3e50" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox alignment="CENTER" prefHeight="127.0" prefWidth="151.0">
+                                 <children>
+                                    <Label prefHeight="15.0" prefWidth="239.0" text="Total Uploads" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="Roboto" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@media/icons8-upload-100.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="btnDocUploaded" text="0" textFill="#2c3e50">
+                                             <font>
+                                                <Font name="Roboto Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" onAction="#btnAddDocument" prefHeight="25.0" prefWidth="60.0" stylesheets="@css/button.css" text="Import" textFill="#2c3e50" />
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox alignment="CENTER" prefHeight="127.0" prefWidth="151.0">
+                                 <children>
+                                    <Label prefHeight="15.0" prefWidth="184.0" text="Total Downloads" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="Roboto" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@media/icons8-download-100.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="btnDocDownload" text="0" textFill="#2c3e50">
+                                             <font>
+                                                <Font name="Roboto Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Button mnemonicParsing="false" onAction="#btnOpenRepository" prefHeight="25.0" prefWidth="60.0" stylesheets="@css/button.css" text="Open" textFill="#2c3e50" />
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox alignment="CENTER" prefHeight="127.0" prefWidth="151.0">
+                                 <children>
+                                    <Label prefHeight="15.0" prefWidth="239.0" text="Server Status" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="Roboto" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@media/icons8-mysql-logo-100.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label fx:id="lblMysqlConnStatus" text="Status" textFill="#2c3e50">
+                                             <font>
+                                                <Font name="Roboto Bold" size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="57.0" prefWidth="76.0" spacing="5.0">
+                                       <children>
+                                          <Button fx:id="btnCheckServer" mnemonicParsing="false" onAction="#btnCheckServer" prefHeight="25.0" stylesheets="@css/button.css" text="Refresh" textFill="#2c3e50">
+                                             <font>
+                                                <Font name="Roboto" size="12.0" />
+                                             </font></Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="chartPane" layoutX="100.0" layoutY="161.0" prefHeight="232.0" prefWidth="590.0" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="160.0">
+                     <children>
+                        <LineChart fx:id="lineChart" layoutY="1.0" legendVisible="false" stylesheets="@css/linechart.css" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="paneLogInfo" layoutX="136.0" layoutY="406.0" prefHeight="174.0" prefWidth="590.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="406.0">
+                     <children>
+                        <Label layoutX="-72.0" layoutY="22.0" prefHeight="15.0" prefWidth="217.0" text="Log Information" textFill="#2c3e50" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Roboto Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="txtLog" layoutX="123.0" layoutY="46.0" prefHeight="95.0" prefWidth="200.0" promptText="Log Information !" style="-fx-background-color: #fff; -fx-border-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font name="Consolas" size="12.0" />
+                           </font></TextArea>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane focusTraversable="true" layoutX="769.0" layoutY="214.0" prefHeight="230.0" prefWidth="200.0" style="-fx-background-color: #fff;" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="160.0">
+                     <children>
+                        <PieChart fx:id="pieChart" labelsVisible="false" layoutX="-161.0" layoutY="-147.0" stylesheets="@css/piechart.css" title="Disk Space" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="708.0" layoutY="31.0" prefHeight="125.0" prefWidth="201.0" style="-fx-background-color: #fff;" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0">
+                     <children>
+                        <HBox alignment="CENTER" layoutX="1.0" layoutY="20.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Folders" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="Roboto" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@media/icons8-live-folder-100.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblCountDocType" alignment="CENTER" prefHeight="24.0" prefWidth="140.0" text="0" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="Roboto Bold" size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Separator orientation="VERTICAL" prefHeight="200.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                                 <children>
+                                    <Label text="Documents" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="Roboto" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@media/icons8-documents-100.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="lblTotalDoc" alignment="CENTER" prefHeight="29.0" prefWidth="139.0" text="0" textFill="#2c3e50">
+                                       <font>
+                                          <Font name="Roboto Bold" size="22.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="677.0" layoutY="355.0" prefHeight="175.0" prefWidth="200.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="405.0">
+                     <children>
+                        <Button layoutX="55.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnAddReminder" prefHeight="25.0" prefWidth="60.0" stylesheets="@css/button.css" text="Add" textFill="#2c3e50" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <font>
+                              <Font name="Roboto" size="12.0" />
+                           </font>
+                        </Button>
+                        <ListView fx:id="listViewReminder" layoutX="1.0" layoutY="14.0" prefHeight="131.0" prefWidth="200.0" style="-fx-background-color: #fff;" stylesheets="@css/listview.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
+                        <Label prefHeight="15.0" prefWidth="99.0" text="Reminder" textFill="#2c3e50" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0">
+                           <font>
+                              <Font name="Roboto Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
