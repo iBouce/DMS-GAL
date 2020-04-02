@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: javax.measure:unit-api:2.0-EDR">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/measure/unit-api/2.0-EDR/unit-api-2.0-EDR.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/measure/unit-api/2.0-EDR/unit-api-2.0-EDR-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/measure/unit-api/2.0-EDR/unit-api-2.0-EDR-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DMS-GAL:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DMS_GAL_jar</output-path>
+    <root id="archive" name="DMS-GAL.jar">
+      <element id="module-output" name="DMS-GAL" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/11/javafx-base-11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/11/javafx-base-11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-media/11/javafx-media-11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/11/javafx-controls-11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/11/javafx-fxml-11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/11/javafx-controls-11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/11/javafx-graphics-11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jfoenix/jfoenix/8.0.9/jfoenix-8.0.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/raumzeitfalle/fx/undecorator/0.1.0/undecorator-0.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/11/javafx-fxml-11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/11/javafx-graphics-11-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:win:11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:11" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:11" />
+      <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.48" />
+      <element id="library" level="project" name="Maven: net.raumzeitfalle.fx:undecorator:0.1.0" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:11.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:11.0.1" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:11.0.1" />
+      <element id="library" level="project" name="Maven: com.jfoenix:jfoenix:8.0.1" />
+    </root>
+  </artifact>
+</component>
